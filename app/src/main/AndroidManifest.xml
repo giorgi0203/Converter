@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.CurrencyConverter"></activity>
-        <activity android:name=".Activities.Charts" />
-        <activity android:name=".Activities.Currency" />
+        <activity android:name=".activities.Height"></activity>
+        <activity android:name=".activities.Weight" />
+        <activity android:name=".activities.History" />
         <activity
-            android:name=".Activities.Menu"
+            android:name=".activities.Menu"
             android:label="@string/title_activity_menu"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.CurrencyConverter" />
+        <activity android:name=".activities.Chart" />
+        <activity android:name=".activities.Currency" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.Menu"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:textAllCaps="false"
+            android:text="Currency"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/money"
+            android:id="@+id/goToCurrency"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:textAllCaps="false"
+            android:text="Weight"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/feedback"
+            android:id="@+id/goToWeightConverter"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:textAllCaps="false"
+            android:text="Height"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/height"
+            android:id="@+id/goToHeightConverter"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"
+            android:textAllCaps="false"
+            android:text="History"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@mipmap/history"
+            android:id="@+id/goToHistory"/>
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

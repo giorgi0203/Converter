@@ -1,8 +1,13 @@
 package com.example.converter
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
+import com.example.converter.activities.Currency
+import com.example.converter.activities.Height
+import com.example.converter.activities.History
+import com.example.converter.activities.Weight
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,11 +19,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        val adapter = ArrayAdapter.createFromResource(this,
-            R.array.currency_names, android.R.layout.simple_spinner_item)
-        // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        // Apply the adapter to the spinner
-        spinner.adapter = adapter
+        goToCurrency.setOnClickListener {
+            val intent = Intent(this, Currency::class.java)
+            startActivity(intent)
+        }
+        goToHeightConverter.setOnClickListener {
+            val intent = Intent(this, Height::class.java)
+            startActivity(intent)
+        }
+        goToWeightConverter.setOnClickListener {
+            val intent = Intent(this, Weight::class.java)
+            startActivity(intent)
+        }
+        goToHistory.setOnClickListener {
+            val intent = Intent(this, History::class.java)
+            startActivity(intent)
+        }
     }
 }

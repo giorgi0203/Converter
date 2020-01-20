@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.CurrencyConverter">
+    tools:context=".activities.Weight">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,30 +16,30 @@
         android:padding="10dp"
         android:orientation="vertical">
         <Spinner
-            android:id="@+id/currency_selector_1"
+            android:id="@+id/weight_selector_1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:tooltipText="Currency"/>
         <EditText
-            android:id="@+id/currency_from_value"
+            android:id="@+id/weight_from_value"
             android:layout_width="match_parent"
             android:inputType="numberDecimal"
             android:layout_height="60dp"/>
         <Button
             android:layout_width="70dp"
-            android:id="@+id/convert_button"
+            android:id="@+id/weight_convert_button"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@mipmap/transfer"
             android:layout_height="70dp"/>
         <Spinner
-            android:id="@+id/currency_selector_2"
+            android:id="@+id/weight_selector_2"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:tooltipText="Currency" />
         <EditText
             android:layout_width="match_parent"
-            android:id="@+id/currency_to_value"
+            android:id="@+id/weight_to_value"
             android:inputType="numberDecimal"
             android:layout_height="60dp"/>
     </LinearLayout>
